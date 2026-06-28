@@ -8,7 +8,7 @@ title: ساخت
 پس از [نصب وابستگی‌ها](./dependencies)، مخزن را کلون کنید و بسازید.
 
 ```bash
-git clone https://github.com/CyberSinook/Sinux.git
+git clone https://github.com/SinuxProject/Sinux.git
 cd Sinux
 ```
 
