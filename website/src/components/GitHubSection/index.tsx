@@ -137,7 +137,7 @@ export default function GitHubSection(): React.ReactElement {
         </h2>
         <p className={styles.sub}>
           <Translate id="github.section.sub">
-            Latest commits and project activity, fetched live from GitHub.
+            Latest commits and project activity.
           </Translate>
         </p>
 
