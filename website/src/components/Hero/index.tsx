@@ -24,7 +24,7 @@ export default function Hero(): React.ReactElement {
             <Translate id="hero.subtitle" description="hero subtitle">
               A minimal Unix-like operating system kernel, built from scratch in C and
               x86_64 Assembly. Boots via GRUB Multiboot2 on UEFI and BIOS — real hardware
-              or QEMU.
+              or QEMU.(the satan herself uses sinux)
             </Translate>
           </p>
 
