@@ -1,0 +1,242 @@
+.section {
+  padding: 6rem 1.25rem;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(129, 140, 248, 0.08), transparent 55%),
+    var(--ifm-background-color);
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 3rem;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ---- loading / error states ---- */
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 2.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 1rem;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-top-color: var(--ifm-color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.errorBox {
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  border-radius: 12px;
+  background: rgba(248, 113, 113, 0.06);
+  color: #fca5a5;
+  font-weight: 600;
+}
+
+.errorHint {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ---- stats row ---- */
+.statsRow {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+.statBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color, rgba(255, 255, 255, 0.02));
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.statBadge:hover {
+  transform: translateY(-3px);
+  border-color: rgba(34, 211, 238, 0.6);
+  box-shadow: 0 8px 24px rgba(34, 211, 238, 0.12);
+  text-decoration: none;
+  color: inherit;
+}
+
+.statIcon {
+  font-size: 1.2rem;
+  color: var(--ifm-color-primary);
+}
+
+.statValue {
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+
+.statTextLabel {
+  font-size: 0.85rem;
+  color: var(--ifm-color-emphasis-600);
+  text-transform: lowercase;
+}
+
+/* ---- commits list ---- */
+.commitHeading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.commitList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.commitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: 12px;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-card-background-color, rgba(255, 255, 255, 0.02));
+  transition: border-color 0.18s ease, background 0.18s ease;
+}
+
+.commitItem:hover {
+  border-color: rgba(34, 211, 238, 0.4);
+  background: rgba(34, 211, 238, 0.03);
+}
+
+.commitAvatarLink {
+  flex-shrink: 0;
+}
+
+.commitAvatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid var(--ifm-color-emphasis-200);
+}
+
+.commitAvatarFallback {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-background-color);
+}
+
+.commitBody {
+  min-width: 0;
+  flex: 1;
+}
+
+.commitMessage {
+  display: block;
+  font-weight: 600;
+  font-size: 0.98rem;
+  line-height: 1.4;
+  color: var(--ifm-color-emphasis-900);
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.commitMessage:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.commitMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.3rem;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-600);
+  flex-wrap: wrap;
+}
+
+.commitAuthor {
+  font-weight: 600;
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+
+.commitAuthor:hover {
+  text-decoration: underline;
+}
+
+.commitSha {
+  font-family: var(--ifm-font-family-monospace, monospace);
+  font-size: 0.78rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+  background: var(--ifm-color-emphasis-100);
+}
+
+.commitTime {
+  margin-inline-start: auto;
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 1.1rem;
+  }
+  .statsRow {
+    gap: 0.6rem;
+  }
+  .statBadge {
+    padding: 0.55rem 1rem;
+  }
+  .commitMessage {
+    white-space: normal;
+  }
+}

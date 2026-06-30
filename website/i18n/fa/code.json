@@ -401,5 +401,92 @@
   "theme.tags.tagsPageTitle": {
     "message": "برچسب‌ها",
     "description": "The title of the tag list page"
+  },
+  "github.section.heading": {
+    "message": "مستقیم از مخزن"
+  },
+  "github.section.sub": {
+    "message": "‌آخرین تغییرات"
+  },
+  "github.loading": {
+    "message": "در حال بارگذاری داده‌های مخزن…"
+  },
+  "github.error.title": {
+    "message": "بارگذاری داده‌های مخزن ناموفق بود"
+  },
+  "github.error.ratelimit": {
+    "message": "محدودیت نرخ API گیت‌هاب رسیده است. لطفاً بعداً دوباره تلاش کنید."
+  },
+  "github.error.generic": {
+    "message": "خطای پیش‌بینی‌نشده‌ای هنگام ارتباط با API گیت‌هاب رخ داد."
+  },
+  "github.stat.stars": {
+    "message": "ستاره"
+  },
+  "github.stat.forks": {
+    "message": "فورک"
+  },
+  "github.stat.issues": {
+    "message": "ایراد"
+  },
+  "github.commits.heading": {
+    "message": "آخرین کامیت‌ها"
+  },
+  "contributors.title": {
+    "message": "مشارکت‌کنندگان"
+  },
+  "contributors.subtitle": {
+    "message": "مشارکت کنندگان."
+  },
+  "contributors.loading": {
+    "message": "در حال بارگذاری مشارکت‌کنندگان…"
+  },
+  "contributors.error.title": {
+    "message": "بارگذاری مشارکت‌کنندگان ناموفق بود"
+  },
+  "contributors.error.ratelimit": {
+    "message": "محدودیت نرخ API گیت‌هاب رسیده است. لطفاً بعداً دوباره تلاش کنید."
+  },
+  "contributors.error.generic": {
+    "message": "خطای پیش‌بینی‌نشده‌ای هنگام ارتباط با API گیت‌هاب رخ داد."
+  },
+  "contributors.empty": {
+    "message": "هنوز مشارکت‌کننده‌ای برای این مخزن یافت نشده است."
+  },
+  "contributors.main.heading": {
+    "message": "مشارکت‌کنندگان اصلی"
+  },
+  "contributors.others.heading": {
+    "message": "مشارکت‌کنندگان"
+  },
+  "contributors.badge.main": {
+    "message": "اصلی"
+  },
+  "contributors.contributions": {
+    "message": "مشارکت"
+  },
+  "donate.button": {
+    "message": "حمایت مالی"
+  },
+  "donate.modal.title": {
+    "message": "حمایت از Sinux"
+  },
+  "donate.modal.subtitle": {
+    "message": "اگر Sinux برایتان مفید بود، از توسعه آن حمایت کنید."
+  },
+  "donate.modal.link": {
+    "message": "حمایت از طریق صفحه اسپانسر"
+  },
+  "donate.modal.crypto": {
+    "message": "کیف پول ارز دیجیتال"
+  },
+  "donate.copied": {
+    "message": "کپی شد!"
+  },
+  "donate.copy": {
+    "message": "کپی"
+  },
+  "donate.modal.empty": {
+    "message": "گزینه‌های حمایت مالی هنوز پیکربندی نشده‌اند. لطفاً بعداً بررسی کنید."
   }
 }

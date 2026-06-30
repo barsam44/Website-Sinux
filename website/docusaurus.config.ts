@@ -15,14 +15,45 @@ const config: Config = {
     v4: true,
   },
 
+  // Custom fields exposed to client code via siteConfig.customFields.
+  // These make the GitHub repo and donation settings editable without
+  // touching component source code.
+  customFields: {
+    // GitHub repository to display commits/stars/contributors for.
+    githubOwner: 'SinuxProject',
+    githubRepo: 'Sinux',
+    // Donation settings — editable without code changes. The DonateModal
+    // component reads these at runtime.
+    donation: {
+      link: 'https://github.com/sponsors/CyberSinook',
+      wallets: [
+        {
+          ticker: 'BTC',
+          label: 'Bitcoin',
+          address: 'bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        },
+        {
+          ticker: 'ETH',
+          label: 'Ethereum',
+          address: '0x0000000000000000000000000000000000000000',
+        },
+        {
+          ticker: 'USDT',
+          label: 'Tether (TRC-20)',
+          address: 'Txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
+        },
+      ],
+    },
+  },
+
   // Production URL of your site.
   url: 'https://barsam44.github.io',
   // For GitHub Pages deployment, this is the "/<projectName>/" path.
   baseUrl: '/Website-Sinux/',
 
   // GitHub Pages deployment config.
-  organizationName: 'amdevelopercp-dotcom', // GitHub account hosting the site.
-  projectName: 'Sinux', // GitHub repo name (the fork).
+  organizationName: 'Sinux-Project', // GitHub account hosting the site.
+  projectName: 'Sinux', // GitHub repo name
   trailingSlash: false,
 
   onBrokenLinks: 'warn',
@@ -89,12 +120,13 @@ const config: Config = {
           label: 'Docs',
         },
         {to: '/blog', label: 'Updates', position: 'left'},
+        {to: '/contributors', label: 'Contributors', position: 'left'},
         {
           type: 'localeDropdown',
           position: 'right',
         },
         {
-          href: 'https://github.com/CyberSinook/Sinux',
+          href: 'https://github.com/SinuxProject/Sinux',
           label: 'GitHub',
           position: 'right',
         },
@@ -121,13 +153,14 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {label: 'GitHub', href: 'https://github.com/CyberSinook/Sinux'},
-            {label: 'Issues', href: 'https://github.com/CyberSinook/Sinux/issues'},
-            {label: 'Releases', href: 'https://github.com/CyberSinook/Sinux/releases'},
+            {label: 'Contributors', to: '/contributors'},
+            {label: 'GitHub', href: 'https://github.com/SinuxProject/Sinux'},
+            {label: 'Issues', href: 'https://github.com/SinuxProject/Sinux/issues'},
+            {label: 'Releases', href: 'https://github.com/SinuxProject/Sinux/releases'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} CyberSinook. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} SinuxProject.`,
     },
     prism: {
       theme: prismThemes.github,

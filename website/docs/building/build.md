@@ -8,7 +8,7 @@ title: Building
 With the [dependencies installed](./dependencies), clone the repository and build.
 
 ```bash
-git clone https://github.com/CyberSinook/Sinux.git
+git clone https://github.com/SinuxProject/Sinux.git
 cd Sinux
 ```
 

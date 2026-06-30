@@ -1,14 +1,1 @@
-{
-  "title": {
-    "message": "Sinux Updates",
-    "description": "The title for the blog used in SEO"
-  },
-  "description": {
-    "message": "Release notes and development updates for the Sinux kernel.",
-    "description": "The description for the blog used in SEO"
-  },
-  "sidebar.title": {
-    "message": "Recent posts",
-    "description": "The label for the left sidebar"
-  }
-}
+{"title": {"message": "به‌روزرسانی‌های Sinux", "description": "The title for the blog used in SEO"}, "description": {"message": "یادداشت‌های انتشار و به‌روزرسانی‌های توسعه برای هسته‌ی Sinux.", "description": "The description for the blog used in SEO"}, "sidebar.title": {"message": "مطالب اخیر", "description": "The label for the left sidebar"}}

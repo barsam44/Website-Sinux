@@ -35,6 +35,10 @@
     "message": "گیت‌هاب",
     "description": "The label of footer link with label=GitHub linking to https://github.com/CyberSinook/Sinux"
   },
+  "link.item.label.Contributors": {
+    "message": "مشارکت‌کنندگان",
+    "description": "The label of footer link with label=Contributors linking to /contributors"
+  },
   "link.item.label.Issues": {
     "message": "ایرادها",
     "description": "The label of footer link with label=Issues linking to https://github.com/CyberSinook/Sinux/issues"
@@ -44,7 +48,7 @@
     "description": "The label of footer link with label=Releases linking to https://github.com/CyberSinook/Sinux/releases"
   },
   "copyright": {
-    "message": "کپی‌رایت © ۲۰۲۶ CyberSinook. ساخته‌شده با Docusaurus.",
+    "message": "کپی‌رایت © ۲۰۲۶ SinuxProject.",
     "description": "The footer copyright"
   }
 }

@@ -1,18 +1,1 @@
-{
-  "version.label": {
-    "message": "Next",
-    "description": "The label for version current"
-  },
-  "sidebar.docsSidebar.category.Architecture": {
-    "message": "Architecture",
-    "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.Syscalls": {
-    "message": "Syscalls",
-    "description": "The label for category 'Syscalls' in sidebar 'docsSidebar'"
-  },
-  "sidebar.docsSidebar.category.Building & Running": {
-    "message": "Building & Running",
-    "description": "The label for category 'Building & Running' in sidebar 'docsSidebar'"
-  }
-}
+{"version.label": {"message": "Next", "description": "The label for version current"}, "sidebar.docsSidebar.category.Architecture": {"message": "معماری", "description": "The label for category 'Architecture' in sidebar 'docsSidebar'"}, "sidebar.docsSidebar.category.Syscalls": {"message": "فراخوان‌های سیستمی", "description": "The label for category 'Syscalls' in sidebar 'docsSidebar'"}, "sidebar.docsSidebar.category.Building & Running": {"message": "ساخت و اجرا", "description": "The label for category 'Building & Running' in sidebar 'docsSidebar'"}}

@@ -3,7 +3,7 @@
 # ----------------------------------------------------------------------------
 #  PLACE THIS FILE AT:  .github/workflows/deploy.yml   (in the REPO ROOT)
 #  NOT inside website/. The path must be exactly .github/workflows/deploy.yml
-# ============================================================================
+# ===========================================================================
 name: Deploy Sinux website to GitHub Pages
 
 on:

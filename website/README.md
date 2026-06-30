@@ -5,6 +5,8 @@ built with [Docusaurus](https://docusaurus.io/) and a Three.js 3D hero.
 
 **Live:** https://amdevelopercp-dotcom.github.io/Sinux/
 
+[فارسی](./README.fa.md) | English
+
 ## Local development
 
 ```bash

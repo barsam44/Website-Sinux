@@ -18,5 +18,9 @@
   "item.label.GitHub": {
     "message": "گیت‌هاب",
     "description": "Navbar item with label GitHub"
+  },
+  "item.label.Contributors": {
+    "message": "مشارکت‌کنندگان",
+    "description": "Navbar item with label Contributors"
   }
 }

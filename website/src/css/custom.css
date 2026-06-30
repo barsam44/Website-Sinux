@@ -66,6 +66,29 @@ body {
   color: var(--ifm-color-primary);
 }
 
+/* Donate button in the navbar (injected via Root theme wrapper) */
+.donate-navbar-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.4);
+  border-radius: 8px;
+  padding: 0.35rem 0.8rem;
+  margin-inline-start: 0.5rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #fca5a5;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
+}
+
+.donate-navbar-btn:hover {
+  background: rgba(248, 113, 113, 0.2);
+  border-color: rgba(248, 113, 113, 0.8);
+  color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
