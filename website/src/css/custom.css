@@ -1,36 +1,97 @@
 /* Futuristic display font for the Sinux wordmark */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Vazirmatn:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800;900&family=Vazirmatn:wght@400;500;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
 
 /**
- * Sinux theme — cyan + violet on deep space background.
+ * Sinux theme — Heaven (light) & Hell (dark) duality.
+ * Dark mode  = Hell: blood red on near-black.
+ * Light mode = Heaven: sky blue on soft white.
  */
 
 :root {
-  --ifm-color-primary: #0e9fb8;
-  --ifm-color-primary-dark: #0d8fa6;
-  --ifm-color-primary-darker: #0c879d;
-  --ifm-color-primary-darkest: #0a6f81;
-  --ifm-color-primary-light: #10afca;
-  --ifm-color-primary-lighter: #11b7d3;
-  --ifm-color-primary-lightest: #2bc8e2;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-font-family-base: 'JetBrains Mono', 'Fira Code', monospace;
 }
 
-/* Dark mode — the primary experience */
+/* ☁️ Heaven — light mode */
+:root,
+[data-theme='light'] {
+  --ifm-color-primary: #2563eb;
+  --ifm-color-primary-dark: #1d4ed8;
+  --ifm-color-primary-darker: #1e40af;
+  --ifm-color-primary-darkest: #1e3a8a;
+  --ifm-color-primary-light: #3b82f6;
+  --ifm-color-primary-lighter: #60a5fa;
+  --ifm-color-primary-lightest: #93c5fd;
+
+  --ifm-background-color: #f5f9ff;
+  --ifm-background-surface-color: #ffffff;
+  --ifm-card-background-color: rgba(37, 99, 235, 0.03);
+  --docusaurus-highlighted-code-line-bg: rgba(37, 99, 235, 0.08);
+
+  --hero-glow-1: rgba(37, 99, 235, 0.12);
+  --hero-glow-2: rgba(96, 165, 250, 0.12);
+  --hero-bg-base: #f5f9ff;
+  --hero-grid-line: rgba(37, 99, 235, 0.06);
+  --hero-badge-text: #1d4ed8;
+  --hero-badge-bg: rgba(37, 99, 235, 0.08);
+  --hero-badge-border: rgba(37, 99, 235, 0.35);
+  --hero-title-grad: linear-gradient(100deg, #93c5fd 0%, #3b82f6 25%, #2563eb 50%, #60a5fa 75%, #93c5fd 100%);
+  --hero-title-glow: rgba(37, 99, 235, 0.35);
+  --hero-subtitle: #475569;
+  --hero-btn-text: #f5f9ff;
+  --hero-btn-grad: linear-gradient(135deg, #60a5fa, #2563eb);
+  --hero-btn-shadow: rgba(37, 99, 235, 0.35);
+  --hero-secondary-text: #1e3a8a;
+  --hero-secondary-bg: rgba(255, 255, 255, 0.6);
+  --hero-secondary-border-hover: rgba(37, 99, 235, 0.6);
+  --hero-stat-num: #2563eb;
+  --hero-logo-glow-1: rgba(37, 99, 235, 0.45);
+  --hero-logo-glow-2: rgba(96, 165, 250, 0.3);
+
+  --features-glow: rgba(37, 99, 235, 0.07);
+  --features-hover-border: rgba(37, 99, 235, 0.5);
+  --features-hover-shadow: rgba(37, 99, 235, 0.15);
+}
+
+/* 🔥 Hell — dark mode */
 [data-theme='dark'] {
-  --ifm-color-primary: #22d3ee;
-  --ifm-color-primary-dark: #14c4df;
-  --ifm-color-primary-darker: #12b9d3;
-  --ifm-color-primary-darkest: #0f99ae;
-  --ifm-color-primary-light: #3fdaf0;
-  --ifm-color-primary-lighter: #4cddf2;
-  --ifm-color-primary-lightest: #74e6f5;
-  --ifm-background-color: #05060a;
-  --ifm-background-surface-color: #0b0e16;
-  --ifm-card-background-color: rgba(255, 255, 255, 0.02);
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+  --ifm-color-primary: #ff1a1a;
+  --ifm-color-primary-dark: #e60000;
+  --ifm-color-primary-darker: #d90000;
+  --ifm-color-primary-darkest: #b30000;
+  --ifm-color-primary-light: #ff3333;
+  --ifm-color-primary-lighter: #ff4d4d;
+  --ifm-color-primary-lightest: #ff7a7a;
+
+  --ifm-background-color: #0a0a0a;
+  --ifm-background-surface-color: #121212;
+  --ifm-card-background-color: rgba(255, 26, 26, 0.03);
+  --docusaurus-highlighted-code-line-bg: rgba(255, 26, 26, 0.08);
+
+  --hero-glow-1: rgba(255, 26, 26, 0.14);
+  --hero-glow-2: rgba(196, 31, 36, 0.14);
+  --hero-bg-base: #0a0a0a;
+  --hero-grid-line: rgba(255, 26, 26, 0.05);
+  --hero-badge-text: #ff6b6b;
+  --hero-badge-bg: rgba(255, 26, 26, 0.08);
+  --hero-badge-border: rgba(255, 26, 26, 0.4);
+  --hero-title-grad: linear-gradient(100deg, #ff6b6b 0%, #ff1a1a 25%, #c41f24 50%, #e0282d 75%, #ff6b6b 100%);
+  --hero-title-glow: rgba(255, 26, 26, 0.45);
+  --hero-subtitle: #cbd5e1;
+  --hero-btn-text: #1a0303;
+  --hero-btn-grad: linear-gradient(135deg, #ff6b6b, #ff1a1a);
+  --hero-btn-shadow: rgba(255, 26, 26, 0.4);
+  --hero-secondary-text: #ffe0e0;
+  --hero-secondary-bg: rgba(20, 10, 10, 0.4);
+  --hero-secondary-border-hover: rgba(255, 26, 26, 0.7);
+  --hero-stat-num: #ff6b6b;
+  --hero-logo-glow-1: rgba(255, 26, 26, 0.55);
+  --hero-logo-glow-2: rgba(196, 31, 36, 0.35);
+
+  --features-glow: rgba(255, 26, 26, 0.08);
+  --features-hover-border: rgba(255, 26, 26, 0.6);
+  --features-hover-shadow: rgba(255, 26, 26, 0.15);
 }
 
 /* Prevent horizontal scrolling / pinch-zoom drift on mobile */
@@ -41,13 +102,10 @@ body {
 }
 
 .navbar {
-  backdrop-filter: blur(10px);
-  background: rgba(11, 14, 22, 0.7);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
-}
-
-[data-theme='light'] .navbar {
-  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: none;
+  background: var(--ifm-background-surface-color);
+  border-bottom: 1px solid var(--hero-badge-border);
+  transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .navbar__logo {
@@ -55,7 +113,7 @@ body {
 }
 
 .navbar__title {
-  font-family: 'Orbitron', system-ui, sans-serif;
+  font-family: 'Orbitron', 'JetBrains Mono', monospace;
   font-weight: 800;
   letter-spacing: 0.04em;
 }
@@ -70,21 +128,20 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
-  background: rgba(248, 113, 113, 0.12);
-  border: 1px solid rgba(248, 113, 113, 0.4);
+  background: var(--hero-badge-bg);
+  border: 1px solid var(--hero-badge-border);
   border-radius: 8px;
   padding: 0.35rem 0.8rem;
   margin-inline-start: 0.5rem;
   font-weight: 700;
   font-size: 0.9rem;
-  color: #fca5a5;
+  color: var(--hero-badge-text);
   cursor: pointer;
   transition: background 0.18s ease, border-color 0.18s ease, color 0.18s ease;
 }
-
 .donate-navbar-btn:hover {
-  background: rgba(248, 113, 113, 0.2);
-  border-color: rgba(248, 113, 113, 0.8);
+  background: var(--hero-secondary-border-hover);
+  border-color: var(--ifm-color-primary);
   color: #fff;
 }
 
@@ -94,5 +151,5 @@ html {
 
 /* Persian / RTL typography niceties */
 html[lang='fa-IR'] {
-  --ifm-font-family-base: 'Vazirmatn', system-ui, Tahoma, sans-serif;
+  --ifm-font-family-base: 'Vazirmatn', monospace;
 }
